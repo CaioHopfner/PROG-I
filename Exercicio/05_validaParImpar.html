@@ -1,0 +1,21 @@
+<script>
+    /*
+    PROBLEMA: VALIDA PAR OU ÍMPAR
+    Faça um script que peça um número inteiro e determine se ele é par ou ímpar.
+    */
+
+    //ENTRADA
+    numero = Number(prompt("Insira um número"))
+    
+    //PROCESSAMENTO
+    numero_final = numero % 2
+    
+    //SAÍDA
+    if (numero_final !== 0) {
+        alert("Este número é impar")
+    } else if (numero_final == 0) {
+        alert("Este número é par")
+    } else {
+        alert("Número Invalido")
+    }
+</script>

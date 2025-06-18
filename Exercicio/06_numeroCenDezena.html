@@ -1,0 +1,28 @@
+<script>
+    /*
+    PROBLEMA: NÚMERO DE CENTENAS, DEZENAS E UNIDADES
+    Faça um script que leia um número inteiro menor que 1000 e imprima a quantidade de centenas, dezenas e unidades do mesmo.
+    Observando os termos no plural a colocação do "e", da vírgula entre outros.
+    
+    Exemplo:
+    326 = 3 centenas, 2 dezenas e 6 unidades
+    12 = 1 dezena e 2 unidades
+    Testar com: 326, 300, 100, 320, 310,305, 301, 101, 311, 111, 25, 20, 10, 21, 11, 1, 7 e 16
+    */
+
+    //ENTRADA
+    const numero1 = Number(prompt("Insira um número menor do que 1000"))
+    //PROCESSAMENTO
+    if (numero1 > 1000) {
+    alert("Insira um número valido")
+    } else {
+    centenas = Math.floor(numero1 / 100)
+    dezenas1 = Math.floor((numero1 % 100) /10 )
+    unidades = numero1 % 10
+    alert(centenas + " centenas, " + dezenas1 + " dezenas e " + unidades + " unidades.")
+    }
+
+    
+    //SAÍDA
+
+</script>

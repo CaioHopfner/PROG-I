@@ -1,0 +1,44 @@
+<meta charset="UTF-8" />
+<script>
+    /*
+    PROBLEMA: ESTAÇÃO DO ANO
+    Faça um script que pergunte para a pessoa em qual hemisfério ela está e qual o mês atual.
+    De acordo com as respostas, informe qual a estação do ano correspondente.
+    */
+
+    //ENTRADA
+    hemisferio = prompt("Qual é o seu hemisferio? N = Norte e S = Sul").toUpperCase()
+    mes = prompt("Qual é o mes atual?").toLowerCase()
+
+    //PROCESSAMENTO
+    if (hemisferio == "S") {
+        if (mes == "dezembro" || mes == "janeiro" || mes == "fevereiro") {
+            alert("Verão")
+        } else if (mes == "março" || mes == "abril" || mes == "maio") {
+            alert("Outono")
+        } else if (mes == "junho" || mes == "julho" || mes == "agosto") {
+            alert("Inverno")
+        } else if (mes == "setembro" || mes == "outubro" || mes == "novembro") {
+            alert("Primavera")
+        } else {
+            alert("Insira um mes valido")
+        }
+    } else if (hemisferio == "N") {
+        if (mes == "dezembro" || mes == "janeiro" || mes == "fevereiro") {
+            alert("Inverno")
+        } else if (mes == "março" || mes == "abril" || mes == "maio") {
+            alert("Primavera")
+        } else if (mes == "junho" || mes == "julho" || mes == "agosto") {
+            alert("Verão")
+        } else if (mes == "setembro" || mes == "outubro" || mes == "novembro") {
+            alert("Outono")
+        } else {
+            alert("Insira um mes valido")
+        }
+    } else {
+        alert("Insira um hemisferio valido")
+    }
+    
+    //SAÍDA
+    alert("A sua estação é: " + estacao)
+</script>
