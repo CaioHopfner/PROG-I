@@ -1,0 +1,35 @@
+<meta charset="UTF-8" />
+<script>
+    /*
+    PROBLEMA: PERÍODO DE VIAGEM
+    Faça um script que pergunte ao usuário qual a distância da viagem, em quilômetros. Peça também para o usuário informar quantos quilômetros pretende viajar por dia. Calcule quantos dias serão necessários para realizar a viagem. Considere o seguinte cenário:
+
+    - Se a viagem demorar até três dias (inclusive), poderá ser realizada em "Qualquer Período";
+    - Se a viagem demorar até 10 dias (inclusive), poderá ser realizada nas "Férias de Julho";
+    - Se a viagem demorar até 20 dias (inclusive), poderá ser realizada nas "Férias de Verão";
+    - Se a viagem demorar mais de 20 dias, indique que o usuário "Deverá Trabalhar Remoto". Apresente o resultado correspondente com os dias de duração da viagem.
+    */
+
+    //ENTRADA
+
+    planejamento = Number(prompt("Quantos quilometros você planeja viajar?"))
+    quilometro_dia = Number(prompt("Quantos quilometros você planeja viajar por dia"))
+
+    //PROCESSAMENTO
+    dias = planejamento / quilometro_dia
+
+    if(dias > 0 && dias <= 3) {
+        alert ("Pode ser realizada em qualquer periodo")
+    } else if (dias <= 10) {
+        alert ("Pode ser realizada nas Ferias de Julho")
+    } else if (dias <= 20) {
+        alert ("Pode ser realizada nas ferias de Verão")
+    } else if (dias >= 21) {
+        alert ("Deverá ser feito Trabalho Remoto")
+    } else {
+        alert ("Invalido")
+    }
+    
+    //SAÍDA
+
+</script>
